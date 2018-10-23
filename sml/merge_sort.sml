@@ -1,8 +1,7 @@
 (* top-down merge sort *)
 fun merge_sort xs =
   case xs of
-    [] => []
-  | [_] => xs
+    ([] | [_]) => xs
   | _ => let
            val m = length xs
            val left = List.take (xs, m div 2)
